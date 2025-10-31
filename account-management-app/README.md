@@ -1,16 +1,70 @@
-# React + Vite
+Account Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Overview
 
-Currently, two official plugins are available:
+The Account Management System is a modern, responsive web application designed to demonstrate a basic user registration and login workflow. Built with React and styled entirely using Tailwind CSS, this project provides a clean, fast, and adaptive user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application leverages local browser storage (localStorage) for simple data persistence, simulating a database environment for demonstration purposes.
 
-## React Compiler
+🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+User Registration: Allows new users to create an account with a name, email, and password.
 
-## Expanding the ESLint configuration
+User Login: Authenticates registered users based on stored credentials.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Session Persistence: Maintains the logged-in user state using localStorage.
+
+Profile View: Displays user information upon successful login.
+
+Responsive Design: Optimized for seamless use across desktop, tablet, and mobile devices, thanks to Tailwind CSS.
+
+Modern UI: Features a clean card layout, shadows, and subtle hover animations for a premium look and feel.
+
+🛠️ Technologies Used
+
+The system is built upon a minimal and robust modern stack:
+
+Frontend Framework: React (Functional Components & Hooks)
+
+Styling: Tailwind CSS (Utility-First CSS Framework)
+
+State Management: React's built-in useState.
+
+Data Persistence: Browser localStorage (for non-production state management).
+
+💾 Data Persistence (Important Note)
+
+This application uses the browser's localStorage API for storing registered user data (emails, encrypted passwords, and user profiles).
+
+How it works:
+
+Registration: User details are converted to JSON and stored under a specific key (e.g., registeredUsers) in localStorage.
+
+Login: The application retrieves the stored data, parses the JSON string back into a JavaScript object, and checks if the provided credentials match a registered user.
+
+💻 Setup and Installation
+
+Follow these steps to get the project running locally:
+
+Prerequisites
+
+Node.js (LTS recommended)
+
+npm 
+
+Steps
+
+Clone the Repository:
+
+git clone [Your Repository URL]
+cd account-management-system
+
+
+Install Dependencies:
+
+npm install 
+
+Start the Development Server:
+
+npm start
+
